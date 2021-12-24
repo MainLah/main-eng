@@ -1,0 +1,97 @@
+button {
+  z-index: 100 !important;
+}
+
+.navbar {
+  background-color: #1e96fc !important;
+  z-index: 100;
+}
+
+.jumbotron {
+  height: 100vh;
+  background-color: #a2d6f9 !important;
+  overflow: hidden;
+}
+.jumbotron img {
+  border: black 1.5px solid;
+}
+
+.carousel {
+  z-index: 10;
+}
+
+#visual1 {
+  z-index: 1;
+  opacity: 0.8;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vocabcard-body {
+  background-color: #a2d6f9 !important;
+}
+
+.card {
+  background-color: #fcf300 !important;
+  min-width: 30vw;
+  max-width: 40vw;
+  z-index: 100;
+}
+
+.btn-vocabcard {
+  background-color: #1e96fc !important;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin-inline: 2rem;
+    min-width: 80vw;
+    max-width: 80vw;
+  }
+}
+#word-guessing {
+  background-color: #a2d6f9 !important;
+  height: 100vh;
+  z-index: 100;
+}
+
+#score {
+  margin: auto;
+  height: 4rem;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-wrong {
+  animation-name: wiggle;
+  animation-duration: 0.35s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
