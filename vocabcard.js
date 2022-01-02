@@ -25,6 +25,7 @@ randomInitBtn.addEventListener("click", async function getRandomWord() {
               audio.src = "none";
               partOfSpeech = "";
               getRandomWord();
+              return;
             } else if (!data.meanings[0].definitions[0].example) {
               currentWord = data.word[0].toUpperCase() + data.word.substring(1);
               definition =
