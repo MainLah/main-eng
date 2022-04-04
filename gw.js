@@ -5,6 +5,7 @@ const seeAnswer = document.getElementById("get-answer");
 const currentQuestion = document.getElementById("gw-question");
 const score = document.getElementById("score");
 const hint = document.getElementById("hint");
+const userAnswer = document.getElementById("user-answer");
 let globalRightAnswer = "";
 
 getQuoteBtn.addEventListener("click", getQuote);
@@ -14,6 +15,8 @@ submitBtn.addEventListener("click", checkAnswer);
 checkAnswerBtn.addEventListener("click", () => {
   seeAnswer.innerText = globalRightAnswer;
 });
+
+userAnswer.addEventListener("keydown", checkKey);
 
 function getQuote() {
   try {
@@ -71,7 +74,7 @@ function checkAnswer() {
 }
 
 function checkKey(e) {
-  if (e.keyCode == 13) {
+  if (e.keyCode === 13) {
     checkAnswer();
   }
 }
